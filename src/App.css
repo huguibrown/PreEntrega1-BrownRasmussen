@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.counter {
+  width: fit-content;
+  background-color: black;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+
+}
