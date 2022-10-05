@@ -1,0 +1,15 @@
+[
+    {
+        "precio" : 1500,
+        "id": 1,
+        "title": "TOP SKADE",
+        "thumbnailUrl": "images/MARTI TOP.jpeg"
+    },
+    
+    {
+        "precio" : 4300,
+        "id": 2,
+        "title": "BUZO SKADE",
+        "thumbnailUrl": "images/MARTI TOP.jpeg"
+    }
+]

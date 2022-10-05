@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import BurguerButton from './BurguerButton';
 import CardWidget from './CartWidget';
+import {NavLink} from 'react-router-dom';
 
 function Navbar() {
 
@@ -15,11 +16,11 @@ function Navbar() {
       <NavContainer>
         <img src="images/Logo1.jpeg" width="100px" alt="" />
         <div className={`links ${clicked ? 'active' : ''}`}>
-          <a onClick={handleClick} href="#h">Home</a>
-          <a onClick={handleClick} href="#h">Catalogo</a>
-          <a onClick={handleClick} href="#h">Contacto</a>
-          <a onClick={handleClick} href="#h">
-            <CardWidget/></a>
+          <NavLink onClick={handleClick} to='/'> Home</NavLink>
+          <NavLink onClick={handleClick} to='/categoria/tops'>Tops</NavLink>
+          <NavLink onClick={handleClick} to='/categoria/accesorios'> Accesorios</NavLink>
+          <NavLink onClick={handleClick} to='cart'>
+            <CardWidget/> </NavLink>
         </div>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
